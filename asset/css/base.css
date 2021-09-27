@@ -1,0 +1,74 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --color-default: #323232;
+    --color-gray: rgba(0, 0, 0, .54)
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: var(--color-default);
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
