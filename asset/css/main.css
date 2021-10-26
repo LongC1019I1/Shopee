@@ -1,11 +1,12 @@
 .header {
-    height: 120px;
+    height: var(--height-header);
     background-image: linear-gradient(#F6402E, #FF6533);
 }
 
 .header-navbar {
     display: flex;
     justify-content: space-between;
+    height: var(--height-navbar);
 }
 
 .header-navbar ul {
@@ -68,6 +69,21 @@
     font-size: 1.5rem;
 }
 
+.header-search {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.header-search .header-search__logo {
+    width: 195px;
+}
+
+.header-search .header-search__logo .icon-shopee-logo {
+    height: 46px;
+    fill: white;
+}
+
 .qr-code {
     position: absolute;
     top: 25px;
@@ -90,6 +106,10 @@
 
 .header__navbar--notify:hover .notify {
     display: block;
+}
+
+.header-search {
+    height: var(--height-header-search);
 }
 
 .notify {
@@ -167,17 +187,76 @@
     color: var(--color-default);
 }
 
-.ml-5 {
-    margin-left: 5px;
+.modal-auth {
+    width: 500px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    justify-self: center;
+    align-self: center;
+    animation: growth linear 0.2s;
 }
 
-@keyframes growTransition {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+.modal-auth__main__header {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-auth__main__content {
+    margin: 50px 0;
+}
+
+.modal-auth__main__content .auth__form__input {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: 2px solid #E1DFE1;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    font-size: 1.4rem;
+}
+
+.modal-auth__main__submit {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+.modal-auth__footer {
+    display: flex;
+    padding: 15px 35px;
+    background: #e0dfe0;
+    margin: -30px;
+    margin-top: 28px;
+    overflow: hidden;
+}
+
+.button-auth-social {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-auth-social i {
+    font-size: 2rem;
+}
+
+.button-auth-social.Facebook {
+    background-color: #344F8E;
+    color: white;
+}
+
+.button-auth-social.Google {
+    background-color: white;
+}
+
+.auth_policy {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--black-lighter);
 }
