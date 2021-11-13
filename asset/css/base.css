@@ -8,7 +8,8 @@
     --color-bee: #EE4D2D;
     --height-header: 120px;
     --height-navbar: 45px;
-    --height-header-search: calc( var(--height-header) - var(--height-navbar))
+    --height-header-search: calc( var(--height-header) - var(--height-navbar));
+    --background-hover: #f1eeee
 }
 
 * {
